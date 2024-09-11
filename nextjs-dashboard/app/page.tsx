@@ -11,31 +11,32 @@ import Image from 'next/image'
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
-      <div className="mt-4 flex grow flex-col gap-4 items-center">
-        <div className="">
-
-          <p className={`${lusitana.className}text-3xl text-gray-800 md:text-6xl md:leading-normal`}>
-            <strong>Trent Matsushima</strong> 
-          </p>
-          <div className="flex justify-center p-6 z-10 md:w-3/5 md:px-28 md:py-12">
+    <main className="flex min-h-screen flex-col p-6 bg-blue-100">
+      <div className="mt-4 flex grow flex-col gap-1  items-center">
+          <div className="flex justify-center p-4 md:w-3/5 md:px-28 md:py-12">
+          
           <Image
-            src="/selfie.jpg"
-            width={1000}
+            src="/Selfie_nobg.png"
+            width={900}
             height={760}
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
             />
           <Image
-            src="/selfie.jpg"
+            src="/Selfie_nobg.png"
             width={560}
             height={620}
             className="block md:hidden"
             alt="Screenshots of the dashboard project showing mobile version"
             />
         </div>
-        </div>
-        
+        <p className={`${lusitana.className}text-3xl text-white-100 md:text-6xl md:leading-normal`}>
+            <strong>Trent Matsushima</strong> 
+          </p>
+      </div>
+      <div className='flex flex-row p-6 gap-4 justify-center text-blue-300'>
+        <p>Projects</p>
+        <p>Experience</p>
       </div>
     </main>
   );

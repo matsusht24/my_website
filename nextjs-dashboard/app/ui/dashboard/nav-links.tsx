@@ -14,7 +14,6 @@ import clsx from  'clsx';
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Projects', href: '/projects'},
   {
     name: 'Experiences',
     href: '/exp',
@@ -38,7 +37,7 @@ export default function NavLinks() {
             )}
           >
           
-            <p className="hidden md:block">{link.name}</p>
+            <p className="block">{link.name}</p>
           </Link>
         );
       })}

@@ -16,6 +16,7 @@ const config: Config = {
           100: '#1C3144',
           200: '#3F88C5',
           300: '#BFCDE0',
+          400: '#42bcf4',
         },
         white: {
           100: '#FEFCFD'
@@ -27,7 +28,8 @@ const config: Config = {
           100: '#A2AEBB'
         },
         yellow: {
-          100: '#FFBA08'
+          100: '#FFBA08',
+          200: '#e0d8b0 '
         },
       },
     },

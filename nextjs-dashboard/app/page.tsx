@@ -10,7 +10,10 @@ import NavIcons from "./ui/dashboard/nav-icons";
 //Landing page for my website
 export default function Page() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col bg-gradient-to-b from-blue-400 to-yellow-200">
+      <div className="flex flex-row p-6 gap-4 justify-end text-blue-100">
+      <NavIcons></NavIcons>
+      </div>
       <div className=" flex grow flex-col gap-1  items-center">
         <div className="flex justify-center md:w-3/5 md:px-28 md:py-12">
           <Image
@@ -37,9 +40,7 @@ export default function Page() {
       <div className="flex flex-row p-6 gap-4 justify-center text-blue-100">
       <NavLinks></NavLinks>
       </div>
-      <div className="flex flex-row p-6 gap-4 justify-center text-blue-100">
-      <NavIcons></NavIcons>
-      </div>
+
     </main>
   );
 }
